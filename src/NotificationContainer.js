@@ -18,7 +18,7 @@ class NotificationContainer extends React.Component {
     notifications: []
   };
 
-  componentWillMount = () => {
+  componentDidMount = () => {
     NotificationManager.addChangeListener(this.handleStoreChange);
   };
 
@@ -37,15 +37,15 @@ class NotificationContainer extends React.Component {
   };
 
   render() {
-    const { notifications } = this.state;
-    const { enterTimeout, leaveTimeout } = this.props;
+    const {notifications} = this.state;
+    const {enterTimeout, leaveTimeout} = this.props;
     return (
-      <Notifications
-        enterTimeout={enterTimeout}
-        leaveTimeout={leaveTimeout}
-        notifications={notifications}
-        onRequestHide={this.handleRequestHide}
-      />
+        <Notifications
+            enterTimeout={enterTimeout}
+            leaveTimeout={leaveTimeout}
+            notifications={notifications}
+            onRequestHide={this.handleRequestHide}
+        />
     );
   }
 }

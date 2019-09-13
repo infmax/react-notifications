@@ -1,5 +1,5 @@
 {
-  "name": "react-notifications",
+  "name": "@infmax/react-notifications",
   "version": "1.4.3",
   "description": "Notification component for ReactJS",
   "main": "lib/index.js",
@@ -72,12 +72,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/infmax/react-notifications.git"
+    "url": "git+https://github.com/infmax/react-notifications.git"
   },
   "author": "Rustem Makhmutov",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/infmax/react-notifications/issues"
   },
-  "homepage": "https://github.com/infmax/react-notifications"
+  "homepage": "https://github.com/infmax/react-notifications",
+  "directories": {
+    "example": "example",
+    "lib": "lib"
+  }
 }
